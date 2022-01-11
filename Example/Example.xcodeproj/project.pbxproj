@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983133B4278D947500AC0BC9 /* KeyChainManager in Frameworks */ = {isa = PBXBuildFile; productRef = 983133B3278D947500AC0BC9 /* KeyChainManager */; };
 		983958A3278D90C200B39B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983958A2278D90C200B39B83 /* AppDelegate.swift */; };
 		983958A5278D90C200B39B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983958A4278D90C200B39B83 /* SceneDelegate.swift */; };
 		983958A7278D90C200B39B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983958A6278D90C200B39B83 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983133B4278D947500AC0BC9 /* KeyChainManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				983133B3278D947500AC0BC9 /* KeyChainManager */,
+			);
 			productName = Example;
 			productReference = 9839589F278D90C200B39B83 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 98395896278D90C200B39B83;
+			packageReferences = (
+				983133B2278D947500AC0BC9 /* XCRemoteSwiftPackageReference "KeyChainManager" */,
+			);
 			productRefGroup = 983958A0278D90C200B39B83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		983133B2278D947500AC0BC9 /* XCRemoteSwiftPackageReference "KeyChainManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/muk-y/KeyChainManager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		983133B3278D947500AC0BC9 /* KeyChainManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 983133B2278D947500AC0BC9 /* XCRemoteSwiftPackageReference "KeyChainManager" */;
+			productName = KeyChainManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98395897278D90C200B39B83 /* Project object */;
 }
